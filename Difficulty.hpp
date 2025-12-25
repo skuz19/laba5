@@ -7,7 +7,6 @@ struct Difficulty
     int mines;
 };
 
-// Готовые пресеты сложностей
 namespace Difficulties
 {
     const Difficulty Easy   { 9,  9,  10 };
