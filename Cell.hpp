@@ -31,5 +31,5 @@ private:
     sf::Vector2f position;
 
     void updateTexture();
-    void applySize();   // 🔥 КЛЮЧ
+    void applySize();
 };
