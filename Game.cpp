@@ -11,7 +11,6 @@ Game::Game()
 {
     auto& tm = TextureManager::instance();
 
-    // Только реально используемые текстуры
     tm.load(TextureID::Closed,  "img/closed.png");
     tm.load(TextureID::Opened, "img/opened.png");
     tm.load(TextureID::Flag,   "img/flag.png");
@@ -60,7 +59,7 @@ void Game::startGame(const Difficulty& diff)
 
     field->setOffset(FRAME, TOP);
 
-    // ===== ФОН (ОДИН ЦВЕТ) =====
+    // ===== ФОН  =====
     background.setSize({ (float)winW, (float)winH });
     background.setFillColor(sf::Color(192,192,192));
 
