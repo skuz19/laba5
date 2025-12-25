@@ -130,7 +130,7 @@ void Game::run()
 
                 if (restartBtn.getGlobalBounds().contains(p))
                 {
-                    field->reset();   // ✅ работает всегда
+                    field->reset();
                     continue;
                 }
 
@@ -149,7 +149,7 @@ void Game::run()
             continue;
         }
 
-        // Счётчик флагов: 1/10
+        // Счётчик флагов
         std::stringstream ss;
         ss << field->getFlagCount() << "/" << currentDiff.mines;
         minesCounter.setString(ss.str());
